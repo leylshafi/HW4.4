@@ -19,5 +19,9 @@ namespace HW4._4.Models
             base.GetInfo();
             Console.WriteLine($@"Type: {Type}");
         }
+        public override void DefineNatureHarmness()
+        {
+            Console.WriteLine("None");
+        }
     }
 }
