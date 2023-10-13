@@ -22,5 +22,10 @@ namespace HW4._4.Models
             Console.WriteLine($@"Door count: {DoorCount},
 Is electric car: {IsElectricCar}");
         }
+        public override void DefineNatureHarmness()
+        {
+            if (IsElectricCar) Console.WriteLine("Low");
+            else Console.WriteLine("High");
+        }
     }
 }
