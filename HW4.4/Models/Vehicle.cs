@@ -39,5 +39,13 @@ DrivePath: {DrivePath}km,
 Production Date: {ProductionDate}");
         }
 
+        public override string ToString()
+        {
+            return $@"Factory name: {FactoryName},
+Model: {Model}";
+        }
+
+        public abstract void DefineNatureHarmness();
+
     }
 }
